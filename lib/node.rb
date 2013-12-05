@@ -1,6 +1,6 @@
 class Node
 
-  attr_accessor :value, :next
+  attr_accessor :value, :nxt
 
   def initialize(value)
     @value = value
@@ -12,9 +12,11 @@ end
 root = nil
 
 a = Node.new("A")
-a.next = root
+a.nxt = root
 root = a
 
 b = Node.new("B")
-b.next = root
+b.nxt = root
 root = b
+
+
