@@ -12,8 +12,7 @@ end
 root = nil
 
 a = Node.new("A")
-a.next = nil
-
+a.next = root
 root = a
 
 b = Node.new("B")
