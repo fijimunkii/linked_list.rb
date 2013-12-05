@@ -1,11 +1,21 @@
+require_relative 'node'
+
 class LinkedList
 
-  def initialize
-    @root = nil
+  attr_reader :root
+
+  def unshift(value)
+    node = Node.new(value)
+    node.nxt = @root
+    @root = node
   end
 
-  def root
-    @root
+  def print_all
+    current = @root
+    while current
+      p current
+      current = current.nxt
+    end
   end
 
 end
