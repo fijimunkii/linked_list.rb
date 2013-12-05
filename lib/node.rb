@@ -6,6 +6,16 @@ class Node
     @value = value
   end
 
+  def to_s
+    if @nxt.nil?
+      nxt_value = 'nil'
+    else
+      nxt_value = @nxt.value
+    end
+
+    "<value: #{@value}, next: #{nxt_value}>"
+  end
+
 end
 
 
@@ -18,5 +28,15 @@ root = a
 b = Node.new("B")
 b.nxt = root
 root = b
+
+c = Node.new("C")
+c.nxt = root
+root = c
+
+d = Node.new("D")
+d.nxt = root
+root = d
+
+
 
 
