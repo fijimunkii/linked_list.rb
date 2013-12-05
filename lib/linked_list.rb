@@ -18,4 +18,14 @@ class LinkedList
     end
   end
 
+  def to_a
+    array = Array.new
+    current = @root
+    while current
+      array << current.value
+      current = current.nxt
+    end
+    array
+  end
+
 end
