@@ -7,3 +7,16 @@ class Node
   end
 
 end
+
+
+root = nil
+
+a = Node.new("A")
+a.next = nil
+
+root = a
+
+b = Node.new("B")
+b.next = a
+
+root = b
